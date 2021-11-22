@@ -23,6 +23,10 @@ android {
         release {
         }
         'Faizan Asad' {
+        storeFile file('C:\\Users\\Colleagues\\Desktop\\iqera.jks')
+            storePassword 'asadasad'
+            keyPassword 'asadasad'
+            keyAlias 'Faizan'
         }
     }
 
@@ -35,7 +39,7 @@ android {
 //            keyPassword System.getenv('SAKAI_MOBILE_KEY_PASSWORD')
 //        }
 //    }
-    compileSdkVersion 30
+    compileSdkVersion 28
     defaultConfig {
         applicationId 'com.iqeramobile.development.sakaiclient20'
         minSdkVersion 16
