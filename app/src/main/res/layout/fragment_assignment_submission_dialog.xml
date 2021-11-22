@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:fragment="com.sakaimobile.development.sakaiclientandroid.fragments.assignments.AssignmentSubmissionDialogFragment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="8dp"
+        android:text="Submit Assignment"
+        android:background="@color/secondaryBackgroundColor"
+        android:textColor="@color/primaryTextColor"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="4dp"
+        android:textSize="12sp"
+        android:text="You can submit this assignment from here."
+        android:background="@color/secondaryBackgroundColor"
+        android:textColor="@color/secondaryTextColor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="12sp"
+        android:text="Drag up to view more details, or drag down to close."
+        android:background="@color/secondaryBackgroundColor"
+        android:textColor="@color/secondaryTextColor"/>
+
+    <com.sakaimobile.development.sakaiclient20.ui.custom_components.FileCompatWebView
+        android:id="@+id/assignment_submission_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

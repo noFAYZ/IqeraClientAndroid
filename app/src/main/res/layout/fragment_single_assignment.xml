@@ -1,0 +1,198 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryBackgroundColor"
+    tools:fragment="com.sakaimobile.development.sakaiclientandroid.fragments.assignments.SingleAssignmentFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="4dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="8dp"
+        android:padding="-8dp">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/tertiaryBackgroundColor">
+
+            <RelativeLayout
+                android:id="@+id/card_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:id="@+id/assignment_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="32dp"
+                    android:maxLines="2"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="Programming Assignment 1: Introduction to C" />
+
+                <TextView
+                    android:id="@+id/assignment_date"
+                    android:layout_below="@id/assignment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="12sp"
+                    tools:text="Due: Feb 15, 2018 11:55 pm" />
+
+                <TextView
+                    android:id="@+id/assignment_close_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/assignment_name"
+                    android:text="\uf00d"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="20sp"
+                    android:padding="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    style="@style/FontawesomeText"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_below="@id/card_header"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/highlightColor" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider"
+                android:scrollbarThumbVertical="@color/highlightColor"
+                android:scrollbarSize="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp">
+
+                        <TableRow android:layout_marginBottom="4dp">
+
+                            <TextView
+                                android:text="Status"
+                                android:textColor="@color/primaryTextColor"/>
+
+                            <TextView
+                                android:id="@+id/assignment_status"
+                                android:layout_width="0dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/secondaryTextColor"
+                                tools:text="Due Tomorrow" />
+                        </TableRow>
+
+                        <TableRow android:layout_marginBottom="4dp">
+
+                            <TextView
+                                android:text="Max Points"
+                                android:textColor="@color/primaryTextColor" />
+
+                            <TextView
+                                android:id="@+id/assignment_max_grade"
+                                android:layout_width="0dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/secondaryTextColor"
+                                tools:text="100" />
+                        </TableRow>
+
+                        <TableRow android:layout_marginBottom="4dp">
+
+                            <TextView
+                                android:text="Allows Resubmissions"
+                                android:textColor="@color/primaryTextColor" />
+
+                            <TextView
+                                android:id="@+id/assignment_allows_resubmission"
+                                android:layout_width="0dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/secondaryTextColor"
+                                tools:text="Yes" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Attachments"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primaryTextColor"/>
+
+                    <TextView
+                        android:id="@+id/assignment_attachments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/secondaryTextColor"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Instructions"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primaryTextColor"/>
+
+                    <TextView
+                        android:id="@+id/assignment_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="48dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/secondaryTextColor"/>
+                </LinearLayout>
+            </ScrollView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/assignment_submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:srcCompat="@drawable/ic_open_in_new_24dp"
+                android:tint="@color/primaryTextColor" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
+
+
