@@ -41,7 +41,7 @@
         android:background="@color/secondaryBackgroundColor"
         android:textColor="@color/secondaryTextColor"/>
 
-    <com.sakaimobile.development.sakaiclient20.ui.custom_components.FileCompatWebView
+    <com.iqeramobile.development.sakaiclient20.ui.custom_components.FileCompatWebView
         android:id="@+id/assignment_submission_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

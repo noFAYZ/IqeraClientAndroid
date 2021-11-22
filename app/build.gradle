@@ -19,6 +19,14 @@ apply plugin: 'kotlin-android-extensions'
 //}
 
 android {
+    signingConfigs {
+        release {
+        }
+        'Faizan Asad' {
+        }
+    }
+
+
 //    signingConfigs {
 //        config {
 //            storeFile file(System.getenv('SAKAI_MOBILE_STORE_PATH'))
@@ -27,10 +35,11 @@ android {
 //            keyPassword System.getenv('SAKAI_MOBILE_KEY_PASSWORD')
 //        }
 //    }
-    compileSdkVersion 28
+    compileSdkVersion 30
     defaultConfig {
-        applicationId "com.sakaimobile.development.sakaiclient20"
+        applicationId 'com.iqeramobile.development.sakaiclient20'
         minSdkVersion 16
+        //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 28
         multiDexEnabled true
         versionCode 8
@@ -95,6 +104,7 @@ dependencies {
     annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
 
     // Android-specific Dagger libraries
+    //noinspection OutdatedLibrary
     implementation "com.google.dagger:dagger-android:$dagger_version"
     implementation "com.google.dagger:dagger-android-support:$dagger_version"
     annotationProcessor "com.google.dagger:dagger-android-processor:$dagger_version"

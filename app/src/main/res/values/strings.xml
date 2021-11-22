@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Sakai Mobile</string>
+    <string name="app_name">IQera Schools LMS</string>
 
     <string name="app_version">Version 1.0.0</string>
-    <string name="logo_made_with">Logo made with Logomakr.com</string>
+    <string name="logo_made_with">nofayz</string>
 
     <string name="logout">Logout</string>
 

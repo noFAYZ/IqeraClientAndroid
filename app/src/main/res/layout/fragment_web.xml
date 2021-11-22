@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:fragment="com.sakaimobile.development.sakaiclientandroid.fragments.WebFragment">
 
-    <com.sakaimobile.development.sakaiclient20.ui.custom_components.FileCompatWebView
+    <com.iqeramobile.development.sakaiclient20.ui.custom_components.FileCompatWebView
         android:id="@+id/data_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
